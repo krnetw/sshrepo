@@ -1,0 +1,7 @@
+- name: restart apache
+  service:
+            name: "{{ web_svc }}"
+            state: started
+
+  listen: apache_restart
+          
